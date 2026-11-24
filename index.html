@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#111110">
+  <title>Made by Neex</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="flowers.js" defer></script>
+  <script src="gallery.js" defer></script>
+</head>
+<body>
+  <header class="header">
+    <a class="brand" href="#intro">Made by Neex</a>
+    <nav aria-label="Основное меню">
+      <a href="#works">мои работы</a>
+      <a href="#process">как я работаю</a>
+      <a class="contact" href="#contact">написать</a>
+    </nav>
+  </header>
+  <main id="intro" class="intro">
+    <div class="flower-stage">
+      <canvas aria-hidden="true" class="flower-field"></canvas>
+      <section class="hero" aria-labelledby="hero-title">
+        <h1 id="hero-title">made by Neex</h1>
+        <button class="field-cue" type="button" aria-label="Запустить пролёт"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v15m-5.5-5.5L12 19l5.5-5.5"/></svg></button>
+      </section>
+    </div>
+    <section class="showcase" id="works" aria-labelledby="works-title">
+      <h2 id="works-title" tabindex="-1">мои работы</h2>
+      <div class="showcase-grid">
+        <a class="shelf-card" href="#projects">
+          <div class="shelf-art" aria-hidden="true">
+            <span class="cover cover-left">AERON</span>
+            <span class="cover cover-right">Подбор</span>
+            <span class="cover cover-front"><span>Тихий<br>климат</span><small>Neex · Веб-дизайн</small></span>
+          </div>
+          <div class="shelf-caption">
+            <div><h3>Сайты</h3><p>Два демо с подбором кондиционеров</p></div>
+            <svg class="ui-icon shelf-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 12h14m-5.5-5.5 5.5 5.5-5.5 5.5"/></svg>
+          </div>
+        </a>
+        <a class="shelf-card" href="#references">
+          <div class="shelf-art" aria-hidden="true">
+            <span class="cover cover-left">LURA</span>
+            <span class="cover cover-right">Timemore</span>
+            <span class="cover cover-front"><span>IVORY</span><small>Подборка · Референсы</small></span>
+          </div>
+          <div class="shelf-caption">
+            <div><h3>Референсы</h3><p>Примеры, которые можно взять за основу сайта</p></div>
+            <svg class="ui-icon shelf-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 12h14m-5.5-5.5 5.5 5.5-5.5 5.5"/></svg>
+          </div>
+        </a>
+      </div>
+    </section>
+    <section class="process" id="process" aria-labelledby="process-title">
+      <div class="process-content">
+        <h2 id="process-title" tabindex="-1">как я работаю</h2>
+        <ol class="process-steps" role="list">
+          <li>
+            <h3>Обсуждаем задачу</h3>
+            <p>Определяем, для кого сайт и какую задачу он решает. Согласуем объём, стоимость и сроки.</p>
+          </li>
+          <li>
+            <h3>Согласуем дизайн</h3>
+            <p>По референсам собираю структуру и показываю первый экран. Согласуем оформление и состав страниц.</p>
+          </li>
+          <li>
+            <h3>Собираю сайт</h3>
+            <p>Собираю страницы, проверяю их на компьютере и телефоне, вношу согласованные правки.</p>
+          </li>
+          <li>
+            <h3>Запускаем</h3>
+            <p>Проверяем итоговую версию. Передаю сайт и помогаю с публикацией по договорённости.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+    <section class="project-contact" id="contact" aria-labelledby="contact-title">
+      <div class="project-contact-content">
+        <h2 id="contact-title" tabindex="-1">Есть проект?</h2>
+        <p class="project-contact-intro">Расскажите, какой сайт нужен и когда хотите его запустить.</p>
+        <div class="project-contact-actions">
+          <a class="entry-action" href="https://t.me/NeexSales" target="_blank" rel="noopener">Написать мне в Telegram</a>
+          <a class="entry-action" href="https://wa.me/79530374541" target="_blank" rel="noopener">Написать мне в WhatsApp</a>
+        </div>
+      </div>
+    </section>
+    <footer class="site-signature">made by Neex</footer>
+  </main>
+  <main class="catalog" id="projects" hidden aria-labelledby="projects-title">
+    <a class="catalog-back" href="#works" aria-label="Назад к моим работам">
+      <svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M19.5 12h-14m5.5 5.5L5.5 12 11 6.5"/></svg>
+    </a>
+    <h1 id="projects-title" tabindex="-1">Сайты</h1>
+    <div class="catalog-grid">
+      <article class="catalog-item">
+        <div class="cover"><h2 class="cover-title">Тихий<br> климат</h2><small>Neex · Веб-дизайн</small></div>
+        <p>Сайт подбора кондиционеров с каталогом и расчётом стоимости установки.</p>
+        <a class="entry-action" href="projects/quiet-climate.html" target="_blank" rel="noopener">Открыть демо</a>
+      </article>
+      <article class="catalog-item">
+        <div class="cover"><h2 class="cover-title">AERON</h2></div>
+        <p>Демосайт для подбора кондиционера по типу комнаты и площади.</p>
+        <a class="entry-action" href="projects/aeron.html" target="_blank" rel="noopener">Открыть демо</a>
+      </article>
+    </div>
+  </main>
+  <main class="catalog" id="references" hidden aria-labelledby="references-title">
+    <a class="catalog-back" href="#works" aria-label="Назад к моим работам">
+      <svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M19.5 12h-14m5.5 5.5L5.5 12 11 6.5"/></svg>
+    </a>
+    <h1 id="references-title" tabindex="-1">Референсы</h1>
+    <p class="catalog-description">Соберите подборку и скопируйте её в сообщение о проекте.</p>
+    <nav class="catalog-jumps" aria-label="Разделы референсов">
+      <button class="entry-action" type="button" data-jump="personal-references">Мои работы</button>
+      <button class="entry-action" type="button" data-jump="public-references">Публичные референсы</button>
+      <button class="entry-action selection-jump" type="button" data-jump="selection-title" hidden>Мой выбор</button>
+    </nav>
+    <section class="catalog-group" aria-labelledby="personal-references">
+      <h2 id="personal-references" tabindex="-1">Мои работы</h2>
+      <div class="catalog-grid">
+        <article class="catalog-item">
+          <div class="cover"><h3 class="cover-title">Тихий<br> климат</h3><small>Neex · Веб-дизайн</small></div>
+          <p>Сайт подбора кондиционеров с каталогом и расчётом стоимости установки.</p>
+          <div class="reference-actions">
+            <a class="entry-action reference-source" href="projects/quiet-climate.html" target="_blank" rel="noopener">Открыть демо</a>
+            <button class="entry-action reference-pick" type="button" data-reference-id="quiet-climate" aria-pressed="false" aria-label="Выбрать Тихий климат">Выбрать</button>
+          </div>
+        </article>
+        <article class="catalog-item">
+          <div class="cover"><h3 class="cover-title">AERON</h3></div>
+          <p>Демосайт для подбора кондиционера по типу комнаты и площади.</p>
+          <div class="reference-actions">
+            <a class="entry-action reference-source" href="projects/aeron.html" target="_blank" rel="noopener">Открыть демо</a>
+            <button class="entry-action reference-pick" type="button" data-reference-id="aeron" aria-pressed="false" aria-label="Выбрать AERON">Выбрать</button>
+          </div>
+        </article>
+      </div>
+    </section>
+    <section class="catalog-group catalog-group-public" aria-labelledby="public-references">
+      <h2 id="public-references" tabindex="-1">Публичные референсы</h2>
+      <div class="catalog-grid">
+        <article class="catalog-item">
+          <div class="cover"><h3 class="cover-title">IVORY</h3></div>
+          <p>Светлый сайт стоматологии. Humeniakk Design и Kostya Kharytoniuk.</p>
+          <div class="reference-actions">
+            <a class="entry-action reference-source" href="https://www.behance.net/gallery/237704709/Dental-Landing-Page-Web-Site-Design-Ivory-Clinic" target="_blank" rel="noopener">Оригинал</a>
+            <button class="entry-action reference-pick" type="button" data-reference-id="ivory" aria-pressed="false" aria-label="Выбрать IVORY">Выбрать</button>
+          </div>
+        </article>
+        <article class="catalog-item">
+          <div class="cover"><h3 class="cover-title">LURA</h3></div>
+          <p>Концепт магазина освещения с контрастной типографикой. Katya Gorbunova.</p>
+          <div class="reference-actions">
+            <a class="entry-action reference-source" href="https://www.behance.net/gallery/255217535/LURA-Atmospheric-Lighting-E-commerce-Concept" target="_blank" rel="noopener">Оригинал</a>
+            <button class="entry-action reference-pick" type="button" data-reference-id="lura" aria-pressed="false" aria-label="Выбрать LURA">Выбрать</button>
+          </div>
+        </article>
+        <article class="catalog-item">
+          <div class="cover"><h3 class="cover-title">Timemore</h3></div>
+          <p>Промосайт кофемолки с крупными планами продукта. Alexey Dmitriev.</p>
+          <div class="reference-actions">
+            <a class="entry-action reference-source" href="https://www.behance.net/gallery/256125817/Timemore-Chestnut-Web-design-Promo-site" target="_blank" rel="noopener">Оригинал</a>
+            <button class="entry-action reference-pick" type="button" data-reference-id="timemore" aria-pressed="false" aria-label="Выбрать Timemore">Выбрать</button>
+          </div>
+        </article>
+      </div>
+    </section>
+    <section class="selection" aria-labelledby="selection-title" hidden>
+      <h2 id="selection-title" tabindex="-1">Мой выбор</h2>
+      <label class="visually-hidden" for="reference-list">Выбранные примеры</label>
+      <textarea id="reference-list" readonly rows="4"></textarea>
+      <button class="entry-action" type="button" id="copy-references">Скопировать подборку</button>
+      <p class="copy-status" role="status"></p>
+    </section>
+  </main>
+</body>
+</html>
