@@ -98,7 +98,8 @@ a { color: inherit; }
   place-items: center;
   padding: 0 var(--gutter) 12svh;
 }
-.flower-field { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
+.flower-field { position: fixed; inset: 0; width: 100%; height: 100svh; pointer-events: none; }
+.intro, .catalog { position: relative; }
 .hero { position: relative; min-width: 0; text-align: center; text-shadow: 0 3px 12px #08080a; }
 .hero h1 {
   margin: 0;
@@ -143,7 +144,7 @@ a { color: inherit; }
 }
 .showcase {
   position: relative;
-  margin-top: 142svh;
+  margin-top: 76svh;
   min-height: 100svh;
   padding: clamp(32px, 5vh, 64px) var(--gutter) 64px;
   scroll-margin-top: var(--header-clearance);
@@ -438,6 +439,7 @@ a { color: inherit; }
   .catalog { padding-top: calc(var(--header-clearance) + 12px); }
 }
 @media (prefers-reduced-motion: reduce) {
+  .showcase { margin-top: 0; }
   .header nav :is(a, button), .entry-action, .catalog-back, .shelf-card, .shelf-art .cover, .shelf-arrow { transition: none; }
 }
 @media (max-width: 359px) {
